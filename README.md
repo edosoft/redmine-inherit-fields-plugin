@@ -34,6 +34,20 @@ rm -rf $REDMINE_FOLDER/plugins/redmine_subtasks_inherited_fields
 ```
 Then restart Redmine to apply the changes.
 
+## Testing plugin
+
+To run tests for this plugin enter the following command:
+
+```
+rake redmine:plugins:test 
+```
+
+Additional RSpec tests can also be run by entering the following command:
+
+```
+rspec plugins/redmine_subtasks_inherited_fields/spec
+```
+
 ## Contact
 
-If you have any doubt please raise an Github Issue, comments are Welcome!
+If you have any doubt please raise an Github Issue. Comments are Welcome!
