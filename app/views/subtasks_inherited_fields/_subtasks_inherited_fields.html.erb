@@ -1,0 +1,55 @@
+<h3><%= l(:subtasks_inherited_fields_plugin_config_title) %></h3>
+
+<p>  
+  <label><%= l(:inherit_fixed_version) %></label>
+  <%= check_box_tag 'settings[inherit_fixed_version_id]', 1, @settings[:inherit_fixed_version_id] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_assigned_to) %></label>
+  <%= check_box_tag 'settings[inherit_assigned_to_id]', 1, @settings[:inherit_assigned_to_id] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_category) %></label>
+  <%= check_box_tag 'settings[inherit_category_id]', 1, @settings[:inherit_category_id] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_priority) %></label>
+  <%= check_box_tag 'settings[inherit_priority_id]', 1, @settings[:inherit_priority_id] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_status) %></label>
+  <%= check_box_tag 'settings[inherit_status_id]', 1, @settings[:inherit_status_id] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_start_date) %></label>
+  <%= check_box_tag 'settings[inherit_start_date]', 1, @settings[:inherit_start_date] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_due_date) %></label>
+  <%= check_box_tag 'settings[inherit_due_date]', 1, @settings[:inherit_due_date] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_is_private) %></label>
+  <%= check_box_tag 'settings[inherit_is_private]', 1, @settings[:inherit_is_private] %>
+</p>
+
+<p>  
+  <label><%= l(:inherit_parent_tracker) %></label>
+  <%= check_box_tag 'settings[inherit_tracker_id]', 1, @settings[:inherit_tracker_id] %>
+</p>
+
+<p>  
+  <label id="settings_default_tracker_id_label"><%= l(:default_subtask_tracker) %></label>
+  <%= select_tag "settings[default_tracker_id]", options_for_select(Tracker.all.map {|t| [t.name, t.id]},@settings[:default_tracker_id]) %>
+</p>
+
+<% content_for :header_tags do %>
+  <%= javascript_include_tag :subtasks_inherited_fields, :plugin => 'redmine_subtasks_inherited_fields' %>
+<% end %>

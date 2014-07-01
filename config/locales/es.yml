@@ -1,0 +1,14 @@
+# Spanish strings go here for Rails i18n
+es:
+  subtasks_inherited_fields_plugin_config_title: "Seleccione los campos a heredar cuando se cree una subtarea" 
+  default_subtask_tracker: "Tipo de subtarea por defecto (cuando no se hereda de la tarea padre)"
+  inherit_fixed_version: "Heredar Versión prevista"
+  inherit_assigned_to: "Heredar Asignado a"
+  inherit_category: "Heredar Categoría"
+  inherit_priority: "Heredar Prioridad"
+  inherit_status: "Heredar Estado"
+  inherit_start_date: "Heredar Fecha de inicio"
+  inherit_due_date: "Heredar Fecha fin"
+  inherit_is_private: "Heredar Privada"
+  inherit_parent_tracker: "Heredar Tipo"
+  # my_label: "My label"
