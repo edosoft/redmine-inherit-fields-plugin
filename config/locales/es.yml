@@ -9,6 +9,7 @@ es:
   inherit_status: "Heredar Estado"
   inherit_start_date: "Heredar Fecha de inicio"
   inherit_due_date: "Heredar Fecha fin"
+  inherit_description: "Heredar Descripción"
   inherit_is_private: "Heredar Privada"
   inherit_parent_tracker: "Heredar Tipo"
   # my_label: "My label"

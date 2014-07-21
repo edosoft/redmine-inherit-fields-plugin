@@ -9,5 +9,6 @@ en:
   inherit_status: "Inherit parent Status"
   inherit_start_date: "Inherit parent Start date"
   inherit_due_date: "Inherit parent Due date"
+  inherit_description: "Inherit parent Description"
   inherit_is_private: "Inherit parent Private"
   inherit_parent_tracker: "Inherit parent Tracker"
