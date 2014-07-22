@@ -28,6 +28,18 @@ module SubtasksInheritedFields
         attrs[:description] = issue.description if settings[:inherit_description]
         attrs[:is_private] = issue.is_private if settings[:inherit_is_private]
         attrs[:status_id] = issue.status_id if settings[:inherit_status_id]
+
+        #inherit custom fields
+        inherit_custom_fields = settings[:inherit_custom_fields] || {}
+        unless inherit_custom_fields.empty?
+          custom_field_values = {}
+          issue.custom_field_values.each do |v|
+            custom_field_values[v.custom_field_id] = v.value if inherit_custom_fields[v.custom_field_id.to_s]
+          end
+
+          attrs[:custom_field_values] = custom_field_values unless custom_field_values.empty?
+        end
+
         link_to(l(:button_add), new_project_issue_path(issue.project, :issue => attrs))
       end
     end

@@ -12,4 +12,4 @@ es:
   inherit_description: "Heredar Descripción"
   inherit_is_private: "Heredar Privada"
   inherit_parent_tracker: "Heredar Tipo"
-  # my_label: "My label"
+  inherit: "Heredar"
