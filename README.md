@@ -2,12 +2,20 @@
 
 Subtasks Inherited Fields is a plugin that allows to choose which fields are inherited by default from parent issue when you create a subtask, in order to create subtasks faster. It also allows to select the default subtask tracker.
 
+## Features
+
+* Config which fields you want to inherit in the plugin administration page
+* Allows to select the default subtask tracker
+* Support for custom fields
+* Tested on Redmine 2.4.6 and Redmine 2.5.1
+
 ## Install
 
 ```
 cd $REDMINE_FOLDER/plugins
 git clone https://github.com/edosoft/redmine-inherit-fields-plugin.git redmine_subtasks_inherited_fields
 ```
+Note: it is very important to clone the repository in the correct folder name: redmine\_subtasks\_inherited\_fields
 
 Then restart Redmine to apply the changes.
  
