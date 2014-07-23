@@ -1,4 +1,5 @@
 # Subtasks Inherited Fields plugin
+[![Code Climate](https://codeclimate.com/github/edosoft/redmine-inherit-fields-plugin.png)](https://codeclimate.com/github/edosoft/redmine-inherit-fields-plugin)
 
 Subtasks Inherited Fields is a plugin that allows to choose which fields are inherited by default from parent issue when you create a subtask, in order to create subtasks faster. It also allows to select the default subtask tracker.
 
