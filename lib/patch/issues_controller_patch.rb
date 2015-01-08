@@ -17,12 +17,17 @@ module  Patch
   module InstanceMethods
     private
     def update_version
-      version_changed = @issue.journals.last(1).map(&:details).flatten.select{|d| d.prop_key== "fixed_version_id" }
-      if version_changed.any?
-        children = @issue.children
-        loop_update_version_child(children, @issue)if children.any?
+      cf = CustomValue.where("customized_type= 'Project' and custom_field_id= 36").where(customized_id: @issue.project.id)
+
+      if cf.present? and cf.first.value == "1"
+        version_changed = @issue.journals.last(1).map(&:details).flatten.select{|d| d.prop_key == "fixed_version_id" }
+        if version_changed.any?
+          children = @issue.children
+          loop_update_version_child(children, @issue)if children.any?
+        end
       end
     end
+
     def loop_update_version_child(children, issue)
       children.each do |child|
         child.update_attributes!(:fixed_version_id=> issue.fixed_version_id)
