@@ -23,5 +23,8 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
   }, :partial => 'subtasks_inherited_fields/subtasks_inherited_fields'
 
 end
-
 require 'issues_helper_patch'
+Rails.application.config.to_prepare do
+  IssuesController.send(:include, Patch::IssuesControllerPatch)
+end
+
