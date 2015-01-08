@@ -20,7 +20,7 @@ module  Patch
       version_changed = @issue.journals.last(1).map(&:details).flatten.select{|d| d.prop_key== "fixed_version_id" }
       if version_changed.any?
         children = @issue.children
-        loop_update_version_child(children, issue)if children.any?
+        loop_update_version_child(children, @issue)if children.any?
       end
     end
     def loop_update_version_child(children, issue)
