@@ -20,14 +20,14 @@ module  Patch
       version_changed = @issue.journals.last(1).map(&:details).flatten.select{|d| d.prop_key== "fixed_version_id" }
       if version_changed.any?
         children = @issue.children
-        loop_update_version_child(children)if children.any?
+        loop_update_version_child(children, issue)if children.any?
       end
     end
-    def loop_update_version_child(children)
+    def loop_update_version_child(children, issue)
       children.each do |child|
-        child.update_attributes!(:fixed_version_id=> @issue.fixed_version_id)
+        child.update_attributes!(:fixed_version_id=> issue.fixed_version_id)
         sub_children = child.children
-        loop_update_version_child(sub_children) if sub_children.any?
+        loop_update_version_child(sub_children, issue) if sub_children.any?
       end
     end
   end
