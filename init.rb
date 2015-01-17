@@ -5,7 +5,7 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
   version '0.0.3'
   url 'http://www.edosoftfactory.com'
   author_url 'mailto:david.verdu@edosoftfactory.com'
-  
+
   requires_redmine :version_or_higher => '2.0.0'  
 
   settings :default => {
@@ -24,6 +24,9 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
 
 end
 require 'issues_helper_patch'
+
+require 'issues_update_hook'
+
 Rails.application.config.to_prepare do
   IssuesController.send(:include, Patch::IssuesControllerPatch)
 end

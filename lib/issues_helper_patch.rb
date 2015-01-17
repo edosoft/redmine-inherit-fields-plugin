@@ -19,6 +19,7 @@ module SubtasksInheritedFields
           default_tracker = issue.tracker unless @project.trackers.include? default_tracker
           attrs[:tracker_id] = default_tracker
         end
+
         attrs[:fixed_version_id] = issue.fixed_version_id if settings[:inherit_fixed_version_id]
         attrs[:category_id] = issue.category_id if settings[:inherit_category_id]
         attrs[:assigned_to_id] = issue.assigned_to_id if settings[:inherit_assigned_to_id]
