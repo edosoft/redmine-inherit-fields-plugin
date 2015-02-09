@@ -4,9 +4,9 @@ class Hooks < Redmine::Hook::ViewListener
     settings = Setting.send("plugin_redmine_subtasks_inherited_fields") || {}
 
     new_parent_id = context[:params][:issue][:parent_issue_id].to_i
-    if new_parent_id != issue.parent_id
-      parent_task = Issue.find(new_parent_id) if issue.parent_id
-      update_subtask(issue, parent_task, settings, false) if parent_task
+    if new_parent_id != issue.parent_id and new_parent_id != 0
+      parent_task = Issue.find(new_parent_id)
+      update_subtask(issue, parent_task, settings, false)
     end
     update_all_children_subtasks(issue, settings)
   end
@@ -16,9 +16,9 @@ class Hooks < Redmine::Hook::ViewListener
     settings = Setting.send("plugin_redmine_subtasks_inherited_fields") || {}
 
     new_parent_id = context[:params][:issue][:parent_issue_id].to_i
-    if new_parent_id != issue.parent_id
-      parent_task = Issue.find(new_parent_id) if issue.parent_id
-      update_subtask(issue, parent_task, settings, false) if parent_task
+    if new_parent_id != issue.parent_id and new_parent_id != 0
+      parent_task = Issue.find(new_parent_id)
+      update_subtask(issue, parent_task, settings, false)
     end
 
     update_all_children_subtasks(issue, settings)
