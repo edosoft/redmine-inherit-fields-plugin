@@ -25,5 +25,6 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
 
 end
 
+require 'subtasks_inherited_fields'
 require 'issues_helper_patch'
 require 'issues_controller_patch'
