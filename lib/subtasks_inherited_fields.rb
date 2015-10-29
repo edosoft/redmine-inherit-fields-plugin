@@ -1,4 +1,3 @@
-puts "subtasks_inherited_fields loaded"
 
 module SubtasksInheritedFields
   module Helpers
