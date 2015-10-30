@@ -10,7 +10,8 @@ module SubtasksInheritedFields
         attrs[:tracker_id] = parent_issue.tracker
       else #use default subtask tracker
         default_tracker = Tracker.find_by_id(settings[:default_tracker_id] || 0) || parent_issue.tracker
-        default_tracker = parent_issue.tracker unless @project.trackers.include? default_tracker
+        project = parent_issue.project
+        default_tracker = parent_issue.tracker unless project.trackers.include? default_tracker
         attrs[:tracker_id] = default_tracker
       end
       attrs[:fixed_version_id] = parent_issue.fixed_version_id if settings[:inherit_fixed_version_id]
