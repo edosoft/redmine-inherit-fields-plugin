@@ -58,6 +58,10 @@ Additional RSpec tests can also be run by entering the following command:
 rspec plugins/redmine_subtasks_inherited_fields/spec
 ```
 
+## Sponsors
+
+Thanks to [Luis Blasco](http://www.luisblasco.com) for his contribution to support this plugin and implement the Create and Continue feature.
+
 ## Contact
 
 If you have any doubt please raise an Github Issue. Comments are Welcome!
