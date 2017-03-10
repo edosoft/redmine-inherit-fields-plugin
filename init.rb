@@ -16,6 +16,7 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
     :inherit_priority_id => false,
     :inherit_start_date => false,
     :inherit_due_date => false,
+    :inherit_subject => false,
     :inherit_description => false,
     :inherit_tracker_id => true,
     :default_tracker_id => 0,

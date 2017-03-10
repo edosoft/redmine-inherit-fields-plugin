@@ -20,6 +20,7 @@ module SubtasksInheritedFields
       attrs[:priority_id] = parent_issue.priority_id if settings[:inherit_priority_id]
       attrs[:start_date] = parent_issue.start_date if settings[:inherit_start_date]
       attrs[:due_date] = parent_issue.due_date if settings[:inherit_due_date]
+      attrs[:subject] = parent_issue.subject if settings[:inherit_subject]
       attrs[:description] = parent_issue.description if settings[:inherit_description]
       attrs[:is_private] = parent_issue.is_private if settings[:inherit_is_private]
       attrs[:status_id] = parent_issue.status_id if settings[:inherit_status_id]
