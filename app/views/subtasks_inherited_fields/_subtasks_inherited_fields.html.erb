@@ -36,6 +36,11 @@
 </p>
 
 <p>  
+  <label><%=  l(:inherit) + " " + l(:field_subject) %></label>
+  <%= check_box_tag 'settings[inherit_subject]', 1, @settings[:inherit_subject] %>
+</p>
+
+<p>  
   <label><%= l(:inherit_description) %></label>
   <%= check_box_tag 'settings[inherit_description]', 1, @settings[:inherit_description] %>
 </p>
