@@ -1,0 +1,15 @@
+# English strings go here for Rails i18n
+de:
+  subtasks_inherited_fields_plugin_config_title: "Felder auswählen, die von Unteraufgaben geerbt werden sollen"
+  default_subtask_tracker: "Standard Unteraufgaben Tracker (wenn nicht von übergeordneter Aufgabe geerbt)"
+  inherit_fixed_version: "Zielversion von übergeordneter Aufgabe erben"
+  inherit_assigned_to: "Zuweisung  von übergeordneter Aufgabe erben"
+  inherit_category: "Kategorie von übergeordneter Aufgabe erben"
+  inherit_priority: "Priorität von übergeordneter Aufgabe erben"
+  inherit_status: "Status von übergeordneter Aufgabe erben"
+  inherit_start_date: "Startdatum von übergeordneter Aufgabe erben"
+  inherit_due_date: "Abgabedatum von übergeordneter Aufgabe erben"
+  inherit_description: "Beschreibung von übergeordneter Aufgabe erben"
+  inherit_is_private: "Privat von übergeordneter Aufgabe erben"
+  inherit_parent_tracker: "Tracker von übergeordneter Aufgabe erben"
+  inherit: "Erbe"
