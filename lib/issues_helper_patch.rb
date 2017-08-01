@@ -6,7 +6,7 @@ module SubtasksInheritedFields
       # Returns a link for adding a new subtask to the given issue
       def link_to_new_subtask_plugin(issue)
         attrs = SubtasksInheritedFields::Helpers.inherit_attrs(issue)
-        link_to(l(:button_add), new_project_issue_path(issue.project, :issue => attrs))
+        link_to(l(:button_add), new_project_issue_path(issue.project, :issue => attrs, :back_url => issue_path(issue)))
       end
     end
 
