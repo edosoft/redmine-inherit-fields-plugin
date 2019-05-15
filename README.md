@@ -65,3 +65,8 @@ Thanks to [Luis Blasco](http://www.luisblasco.com) for his contribution to suppo
 ## Contact
 
 If you have any doubt please raise an Github Issue. Comments are Welcome!
+
+## License
+
+This plugin is open source and released under the terms of the [GNU General Public License v2 (GPL)](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
