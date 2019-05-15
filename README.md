@@ -9,7 +9,7 @@ Subtasks Inherited Fields is a plugin that allows to choose which fields are inh
 * Allows to select the default subtask tracker
 * Fast Create or Create and Continue subtask creation
 * Support for custom fields
-* Works on Redmine 3.0.x and 3.1.x (for Redmine 2.5.x and 2.6.x check out the 2.5.x branch)
+* Works on Redmine 4.0.x and 3.x.x (for Redmine 2.5.x and 2.6.x check out the 2.5.x branch)
 
 ## Install
 
