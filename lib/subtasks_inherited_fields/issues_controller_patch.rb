@@ -18,9 +18,11 @@ module SubtasksInheritedFields
           if params[:project_id]
             redirect_to new_project_issue_path(@issue.project, url_params)
           else
-            url_params[:issue].merge! :project_id => @issue.project_id
+            url_params[:issue][:project_id] = @issue.project_id
             redirect_to new_issue_path(url_params)
           end
+        elsif params[:follow]
+          redirect_to issue_path(@issue)
         else
           redirect_back_or_default issue_path(@issue)
         end
