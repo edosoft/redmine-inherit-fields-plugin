@@ -1,4 +1,3 @@
-
 module SubtasksInheritedFields
   module IssuesControllerPatch
     module InstanceMethods

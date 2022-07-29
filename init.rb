@@ -1,3 +1,7 @@
+require File.dirname(__FILE__) + '/lib/subtasks_inherited_fields.rb'
+require File.dirname(__FILE__) + '/lib/subtasks_inherited_fields/issues_helper_patch.rb'
+require File.dirname(__FILE__) + '/lib/subtasks_inherited_fields/issues_controller_patch.rb'
+
 Redmine::Plugin.register :redmine_subtasks_inherited_fields do
   name 'Redmine Subtasks Inherited Fields plugin'
   author 'Edosoft Factory'
@@ -24,7 +28,3 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
   }, partial: 'subtasks_inherited_fields/subtasks_inherited_fields'
 
 end
-
-require 'subtasks_inherited_fields'
-require 'issues_helper_patch'
-require 'issues_controller_patch'
