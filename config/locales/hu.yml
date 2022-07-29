@@ -11,4 +11,5 @@ hu:
   inherit_description: "Leírás"
   inherit_is_private: "Privát"
   inherit_parent_tracker: "Feladattípus"
+  inherit_estimated_hours: "Inherit parent Estimated Hours"
   inherit: ""

@@ -24,6 +24,7 @@ module SubtasksInheritedFields
       attrs[:description]      = parent_issue.description if settings['inherit_description']
       attrs[:is_private]       = parent_issue.is_private if settings['inherit_is_private']
       attrs[:status_id]        = parent_issue.status_id if settings['inherit_status_id']
+      attrs[:estimated_hours]  = parent_issue.estimated_hours if settings['inherit_estimated_hours']
   
       #inherit custom fields
       inherit_custom_fields = settings['inherit_custom_fields'] || {}

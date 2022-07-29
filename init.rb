@@ -24,7 +24,8 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
       inherit_description:      false,
       inherit_tracker_id:       true,
       default_tracker_id:       0,
-      inherit_category_id:      false
+      inherit_category_id:      false,
+      inherit_estimated_hours:  false
   }, partial: 'subtasks_inherited_fields/subtasks_inherited_fields'
 
 end
