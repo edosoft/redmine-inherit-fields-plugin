@@ -10,7 +10,7 @@ Redmine::Plugin.register :redmine_subtasks_inherited_fields do
   url 'http://www.edosoft.es'
   author_url 'mailto:david.verdu@edosoft.es'
   
-  requires_redmine version_or_higher: '4.2.0'
+  requires_redmine version_or_higher: '4.1.0'
 
   settings default: {
       inherit_fixed_version_id: true,
