@@ -50,6 +50,11 @@
   <%= check_box_tag 'settings[inherit_is_private]', 1, @settings['inherit_is_private'] %>
 </p>
 
+<p>  
+  <label><%= l(:inherit_estimated_hours) %></label>
+  <%= check_box_tag 'settings[inherit_estimated_hours]', 1, @settings['inherit_estimated_hours'] %>
+</p>
+
 <% @settings['inherit_custom_fields'] ||= {} %>
 <% IssueCustomField.all.each do |field| %>
   <p>  

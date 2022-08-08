@@ -46,6 +46,7 @@ Feature: Subtasks configurable inherited fields
     And I see Category has a value
     And I see Assignee has a value
     And I see Status has a value
+    And I see Estimated Hours has a value
     And I see that the issue is private
     When I follow "Add" link in subtasks section
     Then I should see the create new issue form
@@ -59,6 +60,7 @@ Feature: Subtasks configurable inherited fields
     And I should see Category select with the same value as parent Category
     And I should see Assignee select with the same value as parent Assignee
     And I should see Status select with the same value as parent Status
+    And I should see Estimated Hours select with the same value as parent Estimated Hours
 
   Scenario: Open subtask form from issue with all inherit options disabled
     Given All checkboxes have been unchecked in redmine_subtasks_inherited_fields plugin config page
@@ -75,6 +77,7 @@ Feature: Subtasks configurable inherited fields
     And I see Category has a value
     And I see Assignee has a value
     And I see Status has a value
+    And I see Estimated Hours has a value
     And I see that the issue is private
     When I follow "Add" link in subtasks section
     Then I should see the create new issue form
@@ -88,3 +91,4 @@ Feature: Subtasks configurable inherited fields
     And I should see Category select with empty value selected
     And I should see Assignee select with empty value selected
     And I should see Status select with the default status value selected
+    And I should see Estimated Hours select with empty value selected

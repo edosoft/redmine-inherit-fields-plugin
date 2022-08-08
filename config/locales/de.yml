@@ -12,4 +12,5 @@ de:
   inherit_description: "Beschreibung von übergeordneter Aufgabe erben"
   inherit_is_private: "Privat von übergeordneter Aufgabe erben"
   inherit_parent_tracker: "Tracker von übergeordneter Aufgabe erben"
+  inherit_estimated_hours: "Inherit parent Estimated Hours"
   inherit: "Erbe"
