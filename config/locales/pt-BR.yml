@@ -1,0 +1,16 @@
+# Portuguese Brazil strings go here for Rails i18n
+pt-BR:
+  subtasks_inherited_fields_plugin_config_title: "Selecione campos para copiar quando criar uma subtarefa"
+  default_subtask_tracker: "Tipo padrão da subtarefa"
+  inherit_fixed_version: "Copiar Versão da tarefa pai"
+  inherit_assigned_to: "Copiar Atribuído Para da tarefa pai"
+  inherit_category: "Copiar Categoria da tarefa pai"
+  inherit_priority: "Copiar Prioridade da tarefa pai"
+  inherit_status: "Copiar Status da tarefa pai"
+  inherit_start_date: "Copiar Data de Início da tarefa pai"
+  inherit_due_date: "Copiar Data Prevista da tarefa pai"
+  inherit_description: "Copiar Descrição da tarefa pai"
+  inherit_is_private: "Copiar Privado da tarefa pai"
+  inherit_parent_tracker: "Copiar Tipo da tarefa pai"
+  inherit_estimated_hours: "Copiar Horas Estimadas da tarefa pai"
+  inherit: "Copiar"
